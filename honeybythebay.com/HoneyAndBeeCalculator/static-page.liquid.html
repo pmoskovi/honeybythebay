@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <center>
+        <h1>The Definitive Honey and Bee Calculator</h1>
+    </center>
+    <div class="row">
+        <div class="column" style="width:35%; halign:left; padding: 10px;">
+            <h3>Have you ever wondered...</h3>
+            <h4>How many roundtrips it takes for bees to collect a jar of honey?</h4>
+            <h4>How many bees are needed to produce a 16oz jar of honey?</h4>
+            <h4>How much honey does a bee make in its lifetime?</h4>
+            If you have - you're at the right place. This calculator provides an easy-to use calculator to find it all out.
+            
+        </div>
+        <div class="column orangeColumn">
+            <canvas id="myChart1" style="max-width:720px"></canvas>
+            <center>
+                Number of worker bees:<br/>
+                <input id="sliderInput1" oninput="changeValue(this, textInput1);" type="range" min="1" max="100000" value="10000" class="slider slider-yellow">
+                <input id="textInput1" pattern="[0-9]" onkeyup="changeValue(this, sliderInput1);" type="tel" size="6" value="10000"/>
+            </center>
+            <br/>
+            <br/>
+            <br/>
+            <canvas id="myChart2" style="max-width:720px"></canvas>
+            <center>
+                Number of days:<br/>
+                <input id="sliderInput2" oninput="changeValue(this, textInput2);" type="range" min="1" max="365" value="1" class="slider slider-orange">
+                <input id="textInput2" onkeyup="changeValue(this, sliderInput2);" type="tel" size="6" value="50"/>
+            </center>
+            <br/>
+            <br/>
+            <br/>
+            <canvas id="myChart3" style="max-width:720px"></canvas>
+            <center>
+                Nectar collected per flight:<br/>
+                <input id="sliderInput3" oninput="changeValue(this, textInput3);" type="range" min="0" max="50" value="20" class="slider slider-red">
+                <input id="textInput3" onkeyup="changeValue(this, sliderInput3);" type="tel" size="6" value="20"/>
+            </center>
+        </div>
+        <div class="column" style="width:2%;">&nbsp;</div>
+        <div class="column" style="width: 20%">
+            <div id="topText" class="rcorners dashboardTopTitle"></div>
+            <p/>
+            <p/>
+            <div class="rcorners dashboard dashboardTitle">
+                <div class="dashboardTitle">Honey Collected</br>(kilograms)</div>
+                <br/>
+                <div id="bigText1" class="bigText">12</div>
+                In one day a worker bee can collect 0.5g of nectar.
+            </div>
+            <p/>
+            <div class="rcorners dashboard dashboardTitle">
+                <div class="dashboardTitle">Honey Collected</br>(teaspoons)</div>
+                <br/>
+                <div id="bigText2" class="bigText">12</div>
+                <p/>One teaspoon honey weighs 7.08g.
+            </div>
+            <p/>
+            <div class="rcorners dashboard dashboardTitle">
+                <div class="dashboardTitle">Honey Collected</br>(ounces - oz)</div>
+                <br/>
+                <div id="bigText3" class="bigText">12</div>
+                One ounce of honey weighs 42.5 grams.
+            </div>
+            <p/>
+            <div class="rcorners dashboard dashboardTitle">
+                <div class="dashboardTitle">Flowers Visited</div>
+                <br/>
+                <div id="bigText4" class="bigText">0</div>
+                <br/>
+                In one day a worker bee can visit 1,500 flowers.
+            </div>
+        </div>
+      </div>
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<script src="https://honeybythebay.com/cdn/shop/t/1/assets/calc1.js"></script>
+<link rel="stylesheet" href="https://honeybythebay.com/cdn/shop/t/1/assets/calc1.css">
+
+</html>

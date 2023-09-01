@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .column {
+    float: left;
+    /* width: 40%; */
+    text-align: center;
+    /* margin: auto; */
+    /* background-color: #eee; */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  input[type="range"] {
+    width: 50%;
+  }
+  
+  .rcorners {
+    border-radius: 10px;
+    border: 2px solid #bbb;
+    background-color: #eee;
+    padding: 20px;
+    width: 100%;
+    height: 160px;
+  }
+  
+  .bigText {
+    color: #03ad1a;
+    font-size: 24px;
+  }
+  
+  .bigTextYellow {
+    color: rgb(246, 174, 45);
+    font-size: 24px;
+  }
+  
+  .bigTextOrange {
+    color: rgb(242, 100, 25);
+    font-size: 24px;
+  }
+  
+  .bigTextRed {
+    color: rgb(238, 26, 5);
+    font-size: 24px;
+  }
+  
+  .dashboard {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+  
+  .dashboardTitle {
+    font-size: 16px;
+    line-height: normal;
+  }
+  
+  .dashboardTopTitle {
+    font-size: 18px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    /* border: 2px solid #ddd; */
+    /* background-color: #eee; */
+    padding: 20px;
+    width: 100%;
+    height: 200px;
+    line-height: normal;
+  }
+  
+  .slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+  }
+  
+  .slider-yellow.slider::-webkit-slider-thumb {
+    background: rgb(246, 174, 45);
+  }
+  
+  .slider-yellow::-moz-range-thumb {
+    background: rgb(246, 174, 45);
+  }
+  
+  .slider-orange.slider::-webkit-slider-thumb {
+    background: rgb(242, 100, 25);
+  }
+  
+  .slider-orange::-moz-range-thumb {
+    background: rgb(242, 100, 25);
+  }
+  
+  .slider-red.slider::-webkit-slider-thumb {
+    background: rgb(238, 26, 5);
+  }
+  
+  .slider-red::-moz-range-thumb {
+    background: rgb(238, 26, 5);
+  }
+  
+  .orangeColumn {
+    width: 40%;
+    height: 100vh;
+    overflow: auto;
+    border-width: 2px;
+    border-color: orange;
+    border-style: dashed;
+    border-radius: 5px;
+  }
+  
